@@ -15,7 +15,7 @@ function Dashboard() {
           {courses.map((course, index) => (
             <div class="card h-100" style={{width: "330px", marginLeft: "15px"}}>
               <img src="/images/nuu.png" class="card-img-top" alt="..." />
-              <BsThreeDotsVertical className="wd-icon" style={{ position: "absolute", top: "0", left: "280px",top:10, width: "25px", height: "25px", color:"white"}}/>
+              <BsThreeDotsVertical className="wd-icon" style={{ position: "absolute", left: "280px", width: "25px", height: "25px", color:"white"}}/>
               <div class="card-body">
                 <h5 class="card-title">{course.name}</h5>
 
