@@ -1,7 +1,6 @@
 import db from "../Database";
 import { Link } from "react-router-dom";
 import "./index.css";
-import "C:/Users/pablo/OneDrive/Bureau/northeastern/webdev/kanbas-react-web-app3/src/styles.css"
 import { TfiWrite } from "react-icons/tfi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
