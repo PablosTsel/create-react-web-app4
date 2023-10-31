@@ -1,7 +1,7 @@
 import React from "react";
 import TodoForm from "./todoForm";
 import TodoItem from "./TodoItem";
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 function TodoList() {
   const { todos } = useSelector((state) => state.todosReducer);
   return (
@@ -10,7 +10,7 @@ function TodoList() {
       <ul className="list-group">
         <TodoForm />
         {todos.map((todo) => (
-          <TodoItem todo={todo} />
+          <TodoItem key={String(new Date().getUTCMilliseconds()) + todo} todo={todo} />
         ))}
       </ul>
     </div>

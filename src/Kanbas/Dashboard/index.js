@@ -32,7 +32,7 @@ function Dashboard(
       <div className="row row-cols-1 row-cols-md-3 g-4" style={{marginTop: "1px"}}>
           {courses.map((course, index) => (
             
-            <div className="card h-100" style={{width: "330px", marginLeft: "15px"}}>
+            <div key={String(new Date().getUTCMilliseconds()) + index} className="card h-100" style={{width: "330px", marginLeft: "15px"}}>
               <img src="/images/nuu.png" className="card-img-top" alt="..." />
               <BsThreeDotsVertical className="wd-icon" style={{ position: "absolute", left: "280px", width: "25px", height: "25px", color:"white"}}/>
               <div className="card-body">
