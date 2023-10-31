@@ -6,7 +6,6 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -20,7 +19,7 @@ function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const [screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <h2>
