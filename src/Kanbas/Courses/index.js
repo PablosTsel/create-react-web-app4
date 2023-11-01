@@ -18,14 +18,17 @@ import { AiOutlineMenu } from "react-icons/ai";
 function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const [screen] = pathname.split("/");
+  const screen = pathname.split("/")[4];
+  console.log(pathname);
+  console.log(screen);
+
   const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <h2>
         <label style={{color : "red"}}>
         <AiOutlineMenu className="wd-icon" style={{marginLeft: "10px", marginRight: "10px"}} />
-            Courses {course.name}  / {screen}
+            Courses {course.name} / {screen}
         </label>
         <hr/>
 
